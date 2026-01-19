@@ -204,7 +204,10 @@ var game = (function(){
 		if(player.y > height){player.y = height;}		
 		if(map["a"] == 1){player.c = "rgba(255,0,0,0.25)";}
 		if(map["b"] == 1){player.c = "rgba(0,255,0,0.25)";}
-		if(map["x"] == 1){player.c = "rgba(0,0,255,0.25)";}
+		if(map["x"] == 1){
+			player.c = "rgba(0,0,255,0.25)";
+			player.x += *5;
+		}
 		if(map["y"] == 1){player.c = "rgba(255,0,255,0.25)";}
 
 		if(map["start"] == 1 && !banner)
